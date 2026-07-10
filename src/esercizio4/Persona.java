@@ -2,17 +2,17 @@ package esercizio4;
 
 public class Persona {
 	public String nome;
-	public int anni;
-	public int giorni;
-	public long secondi;
+	public int etaAnni;
+	public int etaGiorni;
+	public long etaSecondi;
 	
 	public void calcolaEta() {
-		giorni = anni * 365;
-		secondi = (long) giorni* 24 * 60 * 60;
+		etaGiorni = etaAnni * 365;
+		etaSecondi = (long) etaGiorni* 24 * 60 * 60;
 		System.out.println("Nome: "+ nome);
-		System.out.println("Età in anni: "+ anni +" anni.");
-		System.out.println("Età in giorni: "+ giorni + " giorni.");
-		System.out.println("Età in secondi: "+ secondi +" secondi.");
+		System.out.println("La tua età in anni: "+ etaAnni +" anni.");
+		System.out.println("La tua età in giorni: "+ etaGiorni + " giorni.");
+		System.out.println("La tua età in secondi: "+ etaSecondi +" secondi.");
 	}
 
 }
