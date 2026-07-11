@@ -31,7 +31,9 @@ public class ContoBancarioTest {
 		clienteTre.saldo = 1982.83;
 		
 		clienteTre.infoCliente(); 
-		clienteTre.interesse();     
+		
+		clienteTre.interesse(3.0);     
+		
 		clienteTre.versamento(49.90); 
 	}
 }

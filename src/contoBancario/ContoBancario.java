@@ -25,10 +25,10 @@ public class ContoBancario {
 		System.out.println("Il tuo saldo ora è: " + saldo + "€.");
 	}
 	
-	public void interesse() {
-		double importoInteresse = saldo * 0.03; 
+	public void interesse(double tasso) {
+		double importoInteresse = saldo * (tasso / 100); 
 		saldo = saldo + importoInteresse; 
-		System.out.println("Il tuo interesse del 3%: " + importoInteresse +"€.");
+		System.out.println("Il tuo interesse del " + tasso + "%: " + importoInteresse +"€.");
 		System.out.println("Il tuo saldo con gli interessi ora è: " + saldo + "€.");
 	}
 }
